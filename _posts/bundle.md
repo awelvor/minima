@@ -1,0 +1,143 @@
+philippe@philippe-DEFAULT-STRING:~$ bundle
+Bundle complete! 3 Gemfile dependencies, 34 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+philippe@philippe-DEFAULT-STRING:~$ 
+
+philippe@philippe-DEFAULT-STRING:~$ bundle
+Bundle complete! 3 Gemfile dependencies, 34 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+philippe@philippe-DEFAULT-STRING:~$ 
+
+philippe@philippe-DEFAULT-STRING:~$ gem install jekyll-paginate
+Fetching jekyll-paginate-1.1.0.gem
+Successfully installed jekyll-paginate-1.1.0
+Parsing documentation for jekyll-paginate-1.1.0
+Installing ri documentation for jekyll-paginate-1.1.0
+Done installing documentation for jekyll-paginate after 0 seconds
+1 gem installed
+
+bundle info jekyll
+  * jekyll (4.3.3)
+	Summary: A simple, blog aware, static site generator.
+	Homepage: https://jekyllrb.com
+	Source Code: https://github.com/jekyll/jekyll
+	Changelog: https://github.com/jekyll/jekyll/releases
+	Bug Tracker: https://github.com/jekyll/jekyll/issues
+	Path: /home/philippe/gems/gems/jekyll-4.3.3
+	Reverse Dependencies: 
+		jekyll-feed (0.17.0) depends on jekyll (>= 3.7, < 5.0)
+		jekyll-seo-tag (2.8.0) depends on jekyll (>= 3.8, < 5.0)
+philippe@philippe-DEFAULT-STRING:~$ 
+
+
+
+              
+              BUNDLE(1)                                                                     General Commands Manual                                                                     BUNDLE(1)
+
+NAME
+       bundle - Ruby Dependency Management
+
+SYNOPSIS
+       bundle COMMAND [--no-color] [--verbose] [ARGS]
+
+DESCRIPTION
+       Bundler manages an application's dependencies through its entire life across many machines systematically and repeatably.
+
+       See the bundler website https://bundler.io for information on getting started, and Gemfile(5) for more information on the Gemfile format.
+
+OPTIONS
+       --no-color
+              Print all output without color
+
+       --retry, -r
+              Specify the number of times you wish to attempt network commands
+
+       --verbose, -V
+              Print out additional logging information
+
+BUNDLE COMMANDS
+       We divide bundle subcommands into primary commands and utilities:
+
+PRIMARY COMMANDS
+       bundle install(1) bundle-install.1.html
+              Install the gems specified by the Gemfile or Gemfile.lock
+
+       bundle update(1) bundle-update.1.html
+              Update dependencies to their latest versions
+
+       bundle cache(1) bundle-cache.1.html
+              Package the .gem files required by your application into the vendor/cache directory (aliases: bundle package, bundle pack)
+
+       bundle exec(1) bundle-exec.1.html
+              Execute a script in the current bundle
+
+       bundle config(1) bundle-config.1.html
+              Specify and read configuration options for Bundler
+
+       bundle help(1) bundle-help.1.html
+              Display detailed help for each subcommand
+
+UTILITIES
+       bundle add(1) bundle-add.1.html
+              Add the named gem to the Gemfile and run bundle install
+
+       bundle binstubs(1) bundle-binstubs.1.html
+              Generate binstubs for executables in a gem
+
+       bundle check(1) bundle-check.1.html
+              Determine whether the requirements for your application are installed and available to Bundler
+
+       bundle show(1) bundle-show.1.html
+              Show the source location of a particular gem in the bundle
+
+       bundle outdated(1) bundle-outdated.1.html
+              Show all of the outdated gems in the current bundle
+
+       bundle console(1) (deprecated)
+              Start an IRB session in the current bundle
+
+       bundle open(1) bundle-open.1.html
+              Open an installed gem in the editor
+
+       bundle lock(1) bundle-lock.1.html
+              Generate a lockfile for your dependencies
+
+       bundle viz(1) bundle-viz.1.html (deprecated)
+              Generate a visual representation of your dependencies
+
+       bundle init(1) bundle-init.1.html
+              Generate a simple Gemfile, placed in the current directory
+
+       bundle gem(1) bundle-gem.1.html
+              Create a simple gem, suitable for development with Bundler
+
+       bundle platform(1) bundle-platform.1.html
+              Display platform compatibility information
+
+       bundle clean(1) bundle-clean.1.html
+              Clean up unused gems in your Bundler directory
+
+       bundle doctor(1) bundle-doctor.1.html
+              Display warnings about common problems
+
+       bundle remove(1) bundle-remove.1.html
+              Removes gems from the Gemfile
+
+       bundle plugin(1) bundle-plugin.1.html
+              Manage Bundler plugins
+
+       bundle version(1) bundle-version.1.html
+              Prints Bundler version information
+
+PLUGINS
+       When running a command that isn't listed in PRIMARY COMMANDS or UTILITIES, Bundler will try to find an executable on your path named bundler-<command> and execute it, pass‐
+       ing down any extra arguments to it.
+
+OBSOLETE
+       These commands are obsolete and should no longer be used:
+
+       •   bundle inject(1)
+
+                                                                                     June 2024                                                                            BUNDLE(1)
+
+
