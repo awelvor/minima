@@ -1,0 +1,7 @@
+<nav>
+<table>
+  {% for item in site.data.navigation %}
+  <tr><td>  <a href="{{ item.link }}" target=_blank> {{ item.name }} </a></td></tr>
+  {% endfor %}
+</nav>
+ 
