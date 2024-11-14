@@ -3,6 +3,13 @@ layout: page
 title: documents
 
 ---
+
+<nav>
+<table class="table table-sm table-hover">
+  {%- for item in site.data.navigation -%}
+  <tr><td>  <a href="{{ item.link }}" target=_blank> {{ item.name }} </a></td></tr>
+  {% endfor %}
+</nav>
 <table class="table table-sm table-hover">
 <tr><td><a href="https://web.enoria.app/tools/documentspdf/?p=901858&titredoc=&doc=21531&orientation=landscape&preview=html&format=a3" target=_blank>- Enoria - Mariage - Formulaire M1 - Dossier administratif	 	</a></td></tr>
 <tr><td><a href="https://web.enoria.app/tools/documentspdf/?p=882838,901523,865776,901535&g=29621&titredoc=&doc=23140&orientation=landscape&preview=pdf&format=a4" target=_blank>BANDEAU - adresses - DRAL - format PDF	 	</a></td></tr>
