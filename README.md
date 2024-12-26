@@ -10,7 +10,7 @@
 </div>
 
 ## Installation
-
+2024-12-26
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
