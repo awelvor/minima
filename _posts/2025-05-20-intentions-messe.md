@@ -1,3 +1,4 @@
+`
     <body>
 
 <h1>Intentions de messes</h1>
@@ -28,3 +29,4 @@
  {% endfor %}
 </table>
 </body>
+`
