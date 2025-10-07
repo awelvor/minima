@@ -1,4 +1,5 @@
 <div class="nav-items">
+  <a href="https://www.google.com/">google</a><br>
   {%- for path in include.paths -%}
   {%- assign hyperpage = site.pages | where: "path", path | first -%}
   {%- if hyperpage.title %}
